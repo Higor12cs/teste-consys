@@ -8,6 +8,8 @@ Route::get('/', function () {
     return "Olá";
 });
 
+// teste
+
 Route::view('/login', 'auth.login')->name('login')->middleware('guest');
 Route::post('/login', function (Request $request) {
     $credentials = $request->only('email', 'password');
